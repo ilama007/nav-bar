@@ -1,0 +1,62 @@
+._2mDNk {
+  display: flex;
+  position: relative;
+}
+
+._3qw0K {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+}
+
+._OK5K3 {
+  /*background: rgba(0, 0, 0, 0.3);*/
+  background-image: url(images/black-translucent-bg.png);
+  background-repeat: repeat;
+}
+
+._19S0I {
+  position: absolute;
+  left: 100vw;
+}
+._2Zx1E {
+  left: 0;
+  transition: 0.6s;
+}
+
+/*
+  Pure CSS hamburger menu
+  Credit: https://w3bits.com/animated-menu-icon-css
+*/
+._3Xhed {
+  margin: 1em;
+  width: 40px;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+._3Xhed:after,
+._3Xhed:before,
+._3Xhed div {
+  background-color: #000;
+  border-radius: 3px;
+  content: '';
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  transition: all 0.2s ease-in-out;
+}
+._2RupP {
+  z-index: 9999;
+}
+._2RupP:before {
+  transform: translateY(12px) rotate(135deg);
+}
+._2RupP:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+._2RupP div {
+  transform: scale(0);
+}
