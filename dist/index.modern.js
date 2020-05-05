@@ -98,10 +98,10 @@ function NavBar(_ref) {
   }, [isHamburgerActive]);
   return /*#__PURE__*/React.createElement("div", _extends({}, props, {
     className: styles.navBar + " nav-bar"
-  }), !isMobile && /*#__PURE__*/React.createElement("nav", {
-    className: styles.navContent + " nav-content"
+  }), !isMobile && /*#__PURE__*/React.createElement(Fragment, {
+    className: "desktop " + styles.navContent + " nav-content"
   }, children), isMobile && /*#__PURE__*/React.createElement(Fragment, null, isHamburgerActive && /*#__PURE__*/React.createElement(Portal, null, /*#__PURE__*/React.createElement("div", {
-    className: styles.overlayBackground + " " + mobileMenuOverlayBG + " " + styles.overlay
+    className: "mobile " + styles.overlayBackground + " " + mobileMenuOverlayBG + " " + styles.overlay
   }, /*#__PURE__*/React.createElement("div", {
     className: styles.mobileMenuContent + " " + (startMenuAnim && styles.mobileMenuContentActive)
   }, children))), /*#__PURE__*/React.createElement("div", {
