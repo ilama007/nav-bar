@@ -1,6 +1,6 @@
 {
   "name": "@ilama007/nav-bar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The react package as a responsive navigation wrapper around navigation items.",
   "author": "Dilip Lama",
   "license": "MIT",

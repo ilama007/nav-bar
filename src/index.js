@@ -64,14 +64,16 @@ export default function NavBar({
   return (
     <div {...props} className={`${styles.navBar} nav-bar`}>
       {!isMobile && (
-        <nav className={`${styles.navContent} nav-content`}>{children}</nav>
+        <Fragment className={`desktop ${styles.navContent} nav-content`}>
+          {children}
+        </Fragment>
       )}
       {isMobile && (
         <Fragment>
           {isHamburgerActive && (
             <Portal>
               <div
-                className={`${styles.overlayBackground} ${mobileMenuOverlayBG} ${styles.overlay}`}
+                className={`mobile ${styles.overlayBackground} ${mobileMenuOverlayBG} ${styles.overlay}`}
               >
                 <div
                   className={`${styles.mobileMenuContent} ${
