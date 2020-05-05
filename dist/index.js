@@ -38,10 +38,12 @@ function _objectWithoutPropertiesLoose(source, excluded) {
   return target;
 }
 
-var styles = {"navBar":"_2mDNk","overlay":"_3qw0K","overlayBackground":"_OK5K3","mobileMenuContent":"_19S0I","mobileMenuContentActive":"_2Zx1E","hamburgerIcon":"_3Xhed","hamburgerIconActive":"_2RupP"};
+var styles = {"navBar":"_styles-module__navBar__2mDNk","overlay":"_styles-module__overlay__3qw0K","overlayBackground":"_styles-module__overlayBackground__OK5K3","mobileMenuContent":"_styles-module__mobileMenuContent__19S0I","mobileMenuContentActive":"_styles-module__mobileMenuContentActive__2Zx1E","hamburgerIcon":"_styles-module__hamburgerIcon__3Xhed","hamburgerIconActive":"_styles-module__hamburgerIconActive__2RupP"};
 
 var getWidth = function getWidth() {
-  return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  if (typeof window !== 'undefined') {
+    return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  }
 };
 
 function NavBar(_ref) {
@@ -101,7 +103,7 @@ function NavBar(_ref) {
   }, [isHamburgerActive]);
   return /*#__PURE__*/React__default.createElement("div", _extends({}, props, {
     className: styles.navBar + " nav-bar"
-  }), !isMobile && /*#__PURE__*/React__default.createElement(React.Fragment, {
+  }), !isMobile && /*#__PURE__*/React__default.createElement("div", {
     className: "desktop " + styles.navContent + " nav-content"
   }, children), isMobile && /*#__PURE__*/React__default.createElement(React.Fragment, null, isHamburgerActive && /*#__PURE__*/React__default.createElement(reactPortal.Portal, null, /*#__PURE__*/React__default.createElement("div", {
     className: "mobile " + styles.overlayBackground + " " + mobileMenuOverlayBG + " " + styles.overlay

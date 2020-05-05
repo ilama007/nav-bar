@@ -3,10 +3,15 @@ import PropTypes from 'prop-types';
 import { Portal } from 'react-portal';
 import styles from './styles.module.css';
 
-const getWidth = () =>
-  window.innerWidth ||
-  document.documentElement.clientWidth ||
-  document.body.clientWidth;
+const getWidth = () => {
+  if (typeof window !== 'undefined') {
+    return (
+      window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth
+    );
+  }
+};
 
 export default function NavBar({
   mobileBreakPoint,
@@ -64,9 +69,9 @@ export default function NavBar({
   return (
     <div {...props} className={`${styles.navBar} nav-bar`}>
       {!isMobile && (
-        <Fragment className={`desktop ${styles.navContent} nav-content`}>
+        <div className={`desktop ${styles.navContent} nav-content`}>
           {children}
-        </Fragment>
+        </div>
       )}
       {isMobile && (
         <Fragment>
