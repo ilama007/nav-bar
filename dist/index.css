@@ -1,9 +1,9 @@
-._styles-module__navBar__2mDNk {
+._2mDNk {
   display: flex;
   position: relative;
 }
 
-._styles-module__overlay__3qw0K {
+._3qw0K {
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
@@ -11,17 +11,17 @@
   right: 0 !important;
 }
 
-._styles-module__overlayBackground__OK5K3 {
+._OK5K3 {
   /*background: rgba(0, 0, 0, 0.3);*/
   background-image: url(images/black-translucent-bg.png);
   background-repeat: repeat;
 }
 
-._styles-module__mobileMenuContent__19S0I {
+._19S0I {
   position: absolute;
   left: 100vw;
 }
-._styles-module__mobileMenuContentActive__2Zx1E {
+._2Zx1E {
   left: 0;
   transition: 0.6s;
 }
@@ -30,16 +30,16 @@
   Pure CSS hamburger menu
   Credit: https://w3bits.com/animated-menu-icon-css
 */
-._styles-module__hamburgerIcon__3Xhed {
+._3Xhed {
   margin: 1em;
   width: 40px;
   position: fixed;
   right: 0;
   top: 0;
 }
-._styles-module__hamburgerIcon__3Xhed:after,
-._styles-module__hamburgerIcon__3Xhed:before,
-._styles-module__hamburgerIcon__3Xhed div {
+._3Xhed:after,
+._3Xhed:before,
+._3Xhed div {
   background-color: #000;
   border-radius: 3px;
   content: '';
@@ -48,15 +48,15 @@
   margin: 7px 0;
   transition: all 0.2s ease-in-out;
 }
-._styles-module__hamburgerIconActive__2RupP {
+._2RupP {
   z-index: 9999;
 }
-._styles-module__hamburgerIconActive__2RupP:before {
+._2RupP:before {
   transform: translateY(12px) rotate(135deg);
 }
-._styles-module__hamburgerIconActive__2RupP:after {
+._2RupP:after {
   transform: translateY(-12px) rotate(-135deg);
 }
-._styles-module__hamburgerIconActive__2RupP div {
+._2RupP div {
   transform: scale(0);
 }

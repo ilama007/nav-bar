@@ -38,7 +38,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
   return target;
 }
 
-var styles = {"navBar":"_styles-module__navBar__2mDNk","overlay":"_styles-module__overlay__3qw0K","overlayBackground":"_styles-module__overlayBackground__OK5K3","mobileMenuContent":"_styles-module__mobileMenuContent__19S0I","mobileMenuContentActive":"_styles-module__mobileMenuContentActive__2Zx1E","hamburgerIcon":"_styles-module__hamburgerIcon__3Xhed","hamburgerIconActive":"_styles-module__hamburgerIconActive__2RupP"};
+var styles = {"navBar":"_2mDNk","overlay":"_3qw0K","overlayBackground":"_OK5K3","mobileMenuContent":"_19S0I","mobileMenuContentActive":"_2Zx1E","hamburgerIcon":"_3Xhed","hamburgerIconActive":"_2RupP"};
 
 var getWidth = function getWidth() {
   if (typeof window !== 'undefined') {
